@@ -5,23 +5,11 @@ Directory
 ---------
 cd ~/Library/Application\ Support/Sublime\ Text\ 3
 
-In this repository
-------------------
-*Added*
-Installed Packages
-Packages
-
-*Ignored*
-Cache/
-Index/
-Local/
-Packages/User/Package Control.cache/
-
 Keyboard shortcuts
 ------------------
 ```json
 [
-	{"keys": ["super+."], "command": "reveal_in_side_bar" },
+  {"keys": ["super+."], "command": "reveal_in_side_bar" },
   {"keys": ["super+v"], "command": "paste_and_indent"},
   {"keys": ["super+shift+v"], "command": "paste"},
   {"keys": ["ctrl+super+a"], "command": "alignment"},
