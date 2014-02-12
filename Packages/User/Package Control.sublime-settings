@@ -3,8 +3,13 @@
 	[
 		"3024 Color Scheme",
 		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
+		"ChangeQuotes",
 		"Clickable URLs",
 		"ColorPicker",
+		"Console Wrap for js",
+		"CSS Extended Completions",
 		"Dayle Rees Color Schemes",
 		"Emmet",
 		"FileSystem Autocompletion",
@@ -17,7 +22,9 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
+		"SublimeLinter-ruby",
 		"Syntax Highlighting for Sass",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Theme - Spacegray"
 	]
 }
