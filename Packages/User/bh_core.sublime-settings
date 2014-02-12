@@ -1,0 +1,5 @@
+{
+	"high_visibility_color": "__default__",
+	"no_multi_select_icons": true, // Disable gutter icons when doing multi-select
+	"tag_scope_exclude": ["string", "comment"]
+}
