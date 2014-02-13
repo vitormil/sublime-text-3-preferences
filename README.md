@@ -27,14 +27,34 @@ Keyboard shortcuts
 
 Plugins
 -------
-- Hasher
-- HexViewer
-- Advanced​New​File
-- Git​Hubinator
-- CTags
+- Alignment
+- All autocomplete
+- AutoFileName
+- ChangeQuotes
+- Clickable URLs
+- ColorPicker
+- Console Wrap for JS
+- Emmet
+- Emmet CSS Snippets
+- FileSystem Autocompletion
+- FindKeyConflicts
+- Git
+- GitGutter
+- Git​Hubinator https://github.com/ehamiter/ST2-GitHubinator
+- Hayaku (tools for writing CSS faster)
+- Jump Along Indent
+- LESS
+- SASS
+- SideBarEnhancements
+- Expand selection to quotes
+- Sublime Linter (jshint, json, ruby, csslint)
+- Hasher https://github.com/dangelov/hasher
+- HexViewer https://github.com/facelessuser/HexViewer
+- Advanced​New​File https://github.com/skuroda/Sublime-AdvancedNewFile
+- CTags https://github.com/SublimeText/CTags
 
-CTags - https://github.com/SublimeText/CTags
---------------------------------------------
+CTags
+-----
 rebuild_ctags -> ctrl+t, ctrl+r
 navigate_to_definition -> ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click
 jump_prev -> ctrl+t, ctrl+b or ctrl+< or ctrl+shift+right_click
