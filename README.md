@@ -27,15 +27,15 @@ Keyboard shortcuts
 
 Plugins
 -------
-- Alignment
-- All autocomplete
-- AutoFileName
-- ChangeQuotes
-- Clickable URLs
-- ColorPicker
-- Console Wrap for JS
-- Emmet
-- Emmet CSS Snippets
+- Alignment https://github.com/wbond/sublime_alignment
+- All autocomplete https://github.com/alienhard/SublimeAllAutocomplete
+- AutoFileName https://github.com/BoundInCode/AutoFileName
+- ChangeQuotes https://github.com/colinta/SublimeChangeQuotes
+- Clickable URLs https://github.com/leonid-shevtsov/ClickableUrls_SublimeText
+- ColorPicker https://github.com/weslly/ColorPicker
+- Console Wrap for JS https://github.com/unknownuser88/consolewrap
+- Emmet https://github.com/sergeche/emmet-sublime
+- Emmet CSS Snippets https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2
 - FileSystem Autocompletion https://github.com/lingo/sublime-fscompletion
 - FindKeyConflicts https://github.com/skuroda/FindKeyConflicts
 - Git https://github.com/kemayo/sublime-text-git
@@ -62,9 +62,9 @@ CTags
 -----
 | Command                  | Shortcut |
 | ------------------------ | -------- |
-| rebuild_ctags            | -> ctrl+t, ctrl+r |
-| navigate_to_definition   | -> ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click |
-| jump_prev                | -> ctrl+t, ctrl+b or ctrl+< or ctrl+shift+right_click |
-| show_symbols             | -> alt+s |
-| show_symbols (all files) | -> alt+shift+s |
-| show_symbols (suffix)    | -> ctrl+alt+shift+s |
+| rebuild_ctags            | ctrl+t, ctrl+r |
+| navigate_to_definition   | ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click |
+| jump_prev                | ctrl+t, ctrl+b or ctrl+< or ctrl+shift+right_click |
+| show_symbols             | alt+s |
+| show_symbols (all files) | alt+shift+s |
+| show_symbols (suffix)    | ctrl+alt+shift+s |
