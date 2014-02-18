@@ -14,14 +14,14 @@ Keyboard shortcuts
   {"keys": ["super+shift+v"], "command": "paste"},
   {"keys": ["ctrl+super+a"], "command": "alignment"},
   {"keys": ["super+shift+l"], "command": "sublimelinter_show_all_errors"},
-  {"keys": ["super+alt+d"], "command": "consolewrap"},
-  {"keys": ["alt+i"], "command": "expand_selection_to_quotes"},
-  {"keys": ["alt+q"], "command": "change_quotes"},
-  {"keys": ["super+alt+n"], "description": "advances new file"},
-  {"keys": ["alt+up"], "description": "Jump to previous indented line"},
-  {"keys": ["alt+shift+up"], "description": "Jump to previous indented line and extend selection"},
-  {"keys": ["alt+down"], "description": "Jump to next indented line"},
-  {"keys": ["alt+shift+down"], "description": "Jump to next indented line and extend selection"}
+  {"keys": ["super+option+d"], "command": "consolewrap"},
+  {"keys": ["option+i"], "command": "expand_selection_to_quotes"},
+  {"keys": ["option+q"], "command": "change_quotes"},
+  {"keys": ["super+option+n"], "description": "advances new file"},
+  {"keys": ["option+up"], "description": "Jump to previous indented line"},
+  {"keys": ["option+shift+up"], "description": "Jump to previous indented line and extend selection"},
+  {"keys": ["option+down"], "description": "Jump to next indented line"},
+  {"keys": ["option+shift+down"], "description": "Jump to next indented line and extend selection"}
 ]
 ```
 
@@ -57,14 +57,18 @@ Plugins
 - HexViewer https://github.com/facelessuser/HexViewer
 - Advanced​New​File https://github.com/skuroda/Sublime-AdvancedNewFile
 - CTags https://github.com/SublimeText/CTags
+- DashDoc https://github.com/farcaller/DashDoc
 
 CTags
 -----
 | Command                  | Shortcut |
 | ------------------------ | -------- |
+| DashDoc                  | option+h |
 | rebuild_ctags            | ctrl+t, ctrl+r |
 | navigate_to_definition   | ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click |
 | jump_prev                | ctrl+t, ctrl+b or ctrl+< or ctrl+shift+right_click |
-| show_symbols             | alt+s |
-| show_symbols (all files) | alt+shift+s |
-| show_symbols (suffix)    | ctrl+alt+shift+s |
+| show_symbols             | option+s |
+| show_symbols (all files) | option+shift+s |
+| show_symbols (suffix)    | ctrl+option+shift+s |
+
+* option (Mac) = alt (Windows)
