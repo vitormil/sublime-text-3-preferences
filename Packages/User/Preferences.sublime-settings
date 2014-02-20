@@ -1,31 +1,65 @@
 {
-	"auto_complete": true,
-	"auto_complete_delay": 10,
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
-	"detect_indentation": true,
-	"enable_tab_scrolling": false,
-	"fade_fold_buttons": false,
-	"font_face": "Menlo",
-	"font_options":
-	[
-		"subpixel_antialias"
-	],
-	"font_size": 21.0,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"show_encoding": true,
-	"show_full_path": true,
-	"show_line_endings": true,
-	"soda_folder_icons": true,
-	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme",
-	"trim_trailing_white_space_on_save": true
+  "auto_close_tags": true,
+  "auto_complete": true,
+  "auto_complete_delay": 10,
+  "auto_complete_triggers":
+  [
+    {
+      "characters": "<",
+      "selector": "text.html"
+    },
+    {
+      "characters": "/",
+      "selector": "string.quoted.double.html,string.quoted.single.html, source.css"
+    }
+  ],
+  "auto_complete_with_fields": true,
+  "bold_folder_labels": true,
+  "caret_style": "blink",
+  "color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
+  "close_windows_when_empty": false,
+  "color_pick_upcase": false,
+  "drag_text": false,
+  "detect_indentation": true,
+  "enable_tab_scrolling": false,
+  "fade_fold_buttons": false,
+  "font_face": "Menlo",
+  "font_options":
+  [
+    "subpixel_antialias"
+  ],
+  "font_size": 20.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "rulers": [80],
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+  "show_encoding": true,
+  "show_full_path": true,
+  "show_line_endings": true,
+  "show_panel_on_build": true,
+  "show_tab_close_buttons": true,
+  "soda_folder_icons": true,
+  "tab_completion": true,
+  "tab_size": 2,
+  "theme": "Soda Light 3.sublime-theme",
+  "trim_trailing_white_space_on_save": true,
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    ".jhw-cache",
+    "tmp",
+    "log",
+    ".sass-cache",
+    "node_modules",
+    "pkg",
+    ".bundle"
+  ]
 }

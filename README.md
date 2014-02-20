@@ -5,26 +5,6 @@ Directory
 ---------
 cd ~/Library/Application\ Support/Sublime\ Text\ 3
 
-Keyboard shortcuts
-------------------
-```json
-[
-  {"keys": ["super+."], "command": "reveal_in_side_bar" },
-  {"keys": ["super+v"], "command": "paste_and_indent"},
-  {"keys": ["super+shift+v"], "command": "paste"},
-  {"keys": ["ctrl+super+a"], "command": "alignment"},
-  {"keys": ["super+shift+l"], "command": "sublimelinter_show_all_errors"},
-  {"keys": ["super+option+d"], "command": "consolewrap"},
-  {"keys": ["option+i"], "command": "expand_selection_to_quotes"},
-  {"keys": ["option+q"], "command": "change_quotes"},
-  {"keys": ["super+option+n"], "description": "advances new file"},
-  {"keys": ["option+up"], "description": "Jump to previous indented line"},
-  {"keys": ["option+shift+up"], "description": "Jump to previous indented line and extend selection"},
-  {"keys": ["option+down"], "description": "Jump to next indented line"},
-  {"keys": ["option+shift+down"], "description": "Jump to next indented line and extend selection"}
-]
-```
-
 Plugins
 -------
 - Alignment https://github.com/wbond/sublime_alignment
@@ -59,16 +39,26 @@ Plugins
 - CTags https://github.com/SublimeText/CTags
 - DashDoc https://github.com/farcaller/DashDoc
 
-CTags
------
-| Command                  | Shortcut |
-| ------------------------ | -------- |
-| DashDoc                  | option+h |
-| rebuild_ctags            | ctrl+t, ctrl+r |
-| navigate_to_definition   | ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click |
-| jump_prev                | ctrl+t, ctrl+b or ctrl+< or ctrl+shift+right_click |
-| show_symbols             | option+s |
-| show_symbols (all files) | option+shift+s |
-| show_symbols (suffix)    | ctrl+option+shift+s |
+Shortcuts
+---------
+| Command                         | Shortcut |
+| ------------------------------- | -------- |
+| reveal_in_side_bar              | super+. |
+| paste_and_indent                | super+v |
+| alignment                       | ctrl+super+a |
+| sublimelinter_show_all_errors   | super+shift+l |
+| consolewrap                     | super+option+d |
+| expand_selection_to_quotes      | option+i |
+| change_quotes                   | option+q |
+| advances new file               | super+option+n |
+| DashDoc                         | option+h |
+| ctags: rebuild                  | ctrl+t, ctrl+r |
+| ctags: navigate_to_definition   | ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click |
+| ctags: jump_prev                | ctrl+t, ctrl+b or ctrl+< or ctrl+shift+right_click |
+| ctags: show_symbols             | option+s |
+| ctags: show_symbols (all files) | option+shift+s |
+| ctags: show_symbols (suffix)    | ctrl+option+shift+s |
+| Jump to previous indented line  | option+up |
+| Jump to next indented line      | option+down |
 
 * option (Mac) = alt (Windows)
