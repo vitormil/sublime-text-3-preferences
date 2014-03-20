@@ -38,6 +38,7 @@ Plugins
 - Advanced​New​File https://github.com/skuroda/Sublime-AdvancedNewFile
 - CTags https://github.com/SublimeText/CTags
 - DashDoc https://github.com/farcaller/DashDoc
+- Path Tools https://github.com/pjdietz/sublime-path-tools
 
 Shortcuts
 ---------
@@ -59,6 +60,7 @@ Shortcuts
 | ctags: show_symbols (all files) | option+shift+s |
 | ctags: show_symbols (suffix)    | ctrl+option+shift+s |
 | Jump to previous indented line  | option+up |
+| Jump to next indented line      | option+down |
 | Jump to next indented line      | option+down |
 
 * option (Mac) = alt (Windows)

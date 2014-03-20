@@ -10,5 +10,14 @@
   { "keys": ["ctrl+s"], "command": "insert_snippet", "args": {"name": "Packages/User/Snippets/css-session.sublime-snippet"} },
   { "keys": ["ctrl+shift+s"], "command": "insert_snippet", "args": {"name": "Packages/User/Snippets/css-sub-session.sublime-snippet"} },
 
-  { "keys": ["alt+d"], "command": "dash_doc", "args": { "flip_syntax_sensitive": true } }
+  { "keys": ["alt+d"], "command": "dash_doc", "args": { "flip_syntax_sensitive": true } },
+
+  { "keys": ["ctrl+c", "ctrl+f"], "command": "copy_file_name" },
+  { "keys": ["ctrl+i", "ctrl+f"], "command": "insert_file_name" },
+
+  { "keys": ["ctrl+c", "ctrl+p"], "command": "copy_file_path" },
+  { "keys": ["ctrl+i", "ctrl+p"], "command": "insert_file_path" },
+
+  { "keys": ["ctrl+c", "ctrl+d"], "command": "copy_file_directory" },
+  { "keys": ["ctrl+i", "ctrl+d"], "command": "insert_file_directory" }
 ]

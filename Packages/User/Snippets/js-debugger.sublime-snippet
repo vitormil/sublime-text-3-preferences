@@ -1,0 +1,5 @@
+<snippet>
+	<content>debugger;</content>
+	<tabTrigger>d</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

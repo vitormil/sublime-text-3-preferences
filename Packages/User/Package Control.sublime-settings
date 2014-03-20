@@ -13,22 +13,27 @@
 		"CTags",
 		"DashDoc",
 		"Dayle Rees Color Schemes",
+		"EditorConfig",
 		"Emmet",
 		"Emmet Css Snippets",
 		"FileSystem Autocompletion",
 		"FindKeyConflicts",
+		"FreeMarker",
 		"Git",
 		"GitGutter",
 		"GitHubinator",
+		"Gutter Color",
 		"Hasher",
 		"Hayaku - tools for writing CSS faster",
 		"HexViewer",
 		"JavaScript Snippets",
 		"Jump Along Indent",
 		"LESS",
+		"Markdown Preview",
+		"Path Tools",
 		"Sass",
 		"SideBarEnhancements",
-		"Stylus",
+		"Sublime-CSS3",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
 		"SublimeLinter-csslint",
@@ -38,5 +43,9 @@
 		"Syntax Highlighting for Sass",
 		"Theme - Soda",
 		"Theme - Spacegray"
+	],
+	"repositories":
+	[
+		"https://github.com/i-akhmadullin/Sublime-CSS3"
 	]
 }
