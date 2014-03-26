@@ -42,14 +42,11 @@ Plugins
 - Origami https://github.com/SublimeText/Origami
 - Gutter Color https://github.com/ggordan/GutterColor
 
-Shortcuts
----------
 | Command                         | Shortcut |
 | ------------------------------- | -------- |
 | reveal_in_side_bar              | super+. |
 | paste_and_indent                | super+v |
 | alignment                       | ctrl+super+a |
-| rename tag (html, xml...)       | super+shift+k |
 | sublimelinter_show_all_errors   | super+shift+l |
 | consolewrap                     | super+option+d |
 | expand_selection_to_quotes      | option+i |
@@ -60,11 +57,7 @@ Shortcuts
 | Jump to next indented line      | option+down |
 | Jump to next indented line      | option+down |
 
-* option (Mac) = alt (Windows)
-
-Other shortcuts
----------------
-| Command                         | Shortcut |
+| ctags                           | Shortcut |
 | ------------------------------- | -------- |
 | ctags: rebuild                  | ctrl+t, ctrl+r |
 | ctags: navigate_to_definition   | ctrl+t, ctrl+t or ctrl+> or ctrl+shift+left_click |
@@ -72,3 +65,9 @@ Other shortcuts
 | ctags: show_symbols             | option+s |
 | ctags: show_symbols (all files) | option+shift+s |
 | ctags: show_symbols (suffix)    | ctrl+option+shift+s |
+
+| Command                         | Shortcut |
+| ------------------------------- | -------- |
+| rename tag (html, xml...)       | super+shift+k |
+
+* option (Mac) = alt (Windows)
