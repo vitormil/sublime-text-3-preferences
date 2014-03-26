@@ -15,18 +15,14 @@
 	],
 	"auto_complete_with_fields": true,
 	"bold_folder_labels": true,
-
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
 	"caret_extra_width": 4,
 	"caret_style": "blink",
-	"wide_caret": true,
-
 	"close_windows_when_empty": false,
 	"color_pick_upcase": false,
 	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
 	"detect_indentation": true,
-	"indent_guide_options": ["draw_normal", "draw_active"],
 	"drag_text": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -56,6 +52,11 @@
 	[
 		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"rulers":
@@ -72,5 +73,6 @@
 	"tab_size": 2,
 	"theme": "Soda Light 3.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
 	"word_wrap": false
 }
