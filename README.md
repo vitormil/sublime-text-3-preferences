@@ -41,6 +41,7 @@ Plugins
 - Path Tools https://github.com/pjdietz/sublime-path-tools
 - Origami https://github.com/SublimeText/Origami
 - Gutter Color https://github.com/ggordan/GutterColor
+- SublimeBookmark https://github.com/bollu/sublimeBookmark
 
 | Command                         | Shortcut |
 | ------------------------------- | -------- |
@@ -66,8 +67,11 @@ Plugins
 | ctags: show_symbols (all files) | option+shift+s |
 | ctags: show_symbols (suffix)    | ctrl+option+shift+s |
 
-| Command                         | Shortcut |
-| ------------------------------- | -------- |
-| rename tag (html, xml...)       | super+shift+k |
+| Command                         | Shortcut       |
+| ------------------------------- | -------------- |
+| Next bookmark                   | f2             |
+| Toggle bookmark                 | super+f2       |
+| Clear bookmarks                 | super+shift+f2 |
+| rename tag (html, xml...)       | super+shift+k  |
 
 * option (Mac) = alt (Windows)

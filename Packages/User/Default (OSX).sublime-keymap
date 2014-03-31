@@ -19,5 +19,9 @@
   { "keys": ["ctrl+i", "ctrl+p"], "command": "insert_file_path" },
 
   { "keys": ["ctrl+c", "ctrl+d"], "command": "copy_file_directory" },
-  { "keys": ["ctrl+i", "ctrl+d"], "command": "insert_file_directory" }
+  { "keys": ["ctrl+i", "ctrl+d"], "command": "insert_file_directory" },
+
+  { "keys": ["super+f2"], "command": "sublime_bookmark", "args" : { "type" : "toggle_line"  } },
+  { "keys": ["f2"], "command": "sublime_bookmark", "args" : { "type" : "goto_next" } },
+  { "keys": ["super+shift+f2"], "command": "sublime_bookmark", "args" : { "type" : "remove_all"  } }
 ]
