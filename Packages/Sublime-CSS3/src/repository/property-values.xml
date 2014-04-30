@@ -6,11 +6,70 @@
 			<key>match</key>
 			<string>(-webkit-|-moz-|-ms-|-o-)</string>
 			<key>name</key>
-			<string>support.type.property-value-vendor.css</string>
+			<string>support.type.property-vendor.css</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>animatable properties</string>
+			<key>match</key>
+			<string>\b(all|
+				|background(-color|-image|-position|-size)?|
+				|border-radius|
+				|border-spacing|
+				|border-(bottom-|top-)?(right-|left-)?radius|
+				|border(-bottom|-left|-right|-top)?-color|
+				|border(-bottom|-left|-right|-top)?-width|
+				|border(-bottom|-left|-right|-top|-width)|
+				|border|
+				|bottom|
+				|box-shadow|
+				|clip|
+				|color|
+				|crop|
+				|font(-size-adjust|-size|-stretch|-weight)?|
+				|height|
+				|left|
+				|letter-spacing|
+				|line-height|
+				|margin(-bottom|-left|-right|-top)?|
+				|max-height|
+				|max-lines|
+				|max-width|
+				|min-height|
+				|min-width|
+				|offset(-after|-before|-end|-start)?|
+				|opacity|
+				|outline(-color|-offset|-width)?|
+				|padding(-bottom|-left|-right|-top)?|
+				|right|
+				|text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust)?|
+				|top|
+				|vertical-align|
+				|visibility|
+				|width|
+				|word-spacing|
+				|z-index|
+				|zoom|
+				|columns|
+				|column(-count|-gap|-rule-color|-rule-width|-rule|-width)?|
+				|flex(-grow|-shrink|-basis)?|
+				|order|
+				|perspective(-origin)?|
+				|transform(-origin)?|
+				|fill(-opacity)?|
+				|flood-color|
+				|lighting-color|
+				|marker-offset|
+				|stop-color|
+				|stop-opacity|
+				|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)?|
+				|viewport-fill(-opacity)?)\b</string>
+			<key>name</key>
+			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|unset|
+			<string>\b(absolute|all-scroll|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|unset|
 				|inline-block|inline-flex|inline-flexbox|inline-table|inline|
 				|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll-position|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
 				|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
@@ -46,6 +105,7 @@
 				|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
 				|alpha|
 				|cover|contain|local|
+				|alternate-reverse|alternate|backwards|forwards|end|paused|reverse|running|step-end|step-start|
 				|contents|
 				|box|flexbox|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
 				|startColorStr|EndColorStr)\b</string>
@@ -114,6 +174,54 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>support.type.function.easing.css</string>
+			<key>begin</key>
+			<string>(cubic-bezier|steps)\s*(\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.timing-function.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(,)+</string>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(end|start)+</string>
+					<key>name</key>
+					<string>support.keyword.timing-direction.css</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>support.type.expression.calc.css</string>
 			<key>begin</key>
 			<string>(calc)\s*(\()</string>
@@ -149,6 +257,12 @@
 				<dict>
 					<key>include</key>
 					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>[-/*+]</string>
+					<key>name</key>
+					<string>punctuation.operator.function.css</string>
 				</dict>
 			</array>
 		</dict>

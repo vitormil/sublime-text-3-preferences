@@ -27,6 +27,7 @@
 		"Hasher",
 		"Hayaku - tools for writing CSS faster",
 		"HexViewer",
+		"HTML-CSS-JS Prettify",
 		"JavaScript Snippets",
 		"Jump Along Indent",
 		"LESS",
@@ -45,7 +46,8 @@
 		"SublimeLinter-ruby",
 		"Syntax Highlighting for Sass",
 		"Theme - Soda",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"Vagrant"
 	],
 	"repositories":
 	[

@@ -1,4 +1,28 @@
 
+1.0.5 / 2014-04-23
+==================
+
+ * fix animatable properties highlight
+
+1.0.4 / 2014-04-23
+==================
+
+ * add animatable properties
+ * add transform-origin-x/-y
+
+1.0.3 / 2014-04-18
+==================
+
+ * add animation, timing-functions
+
+1.0.2 / 2014-04-09
+==================
+
+ * Add overflow-wrap, -webkit-line-clamp
+ * fix easing props, editorconfig for css test file
+ * Add ease property, old IE filters: Blur,dropshadow,Shadow
+ * Update README.md
+
 1.0.1 / 2014-02-19
 ==================
 

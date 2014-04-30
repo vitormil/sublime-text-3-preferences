@@ -1,3 +1,4 @@
 {
-  "convert_path" : "/usr/local/bin/convert"
+  "convert_path" : "/usr/local/bin/convert",
+  "supported_syntax": ["css", "css3", "scss", "sass", "less", "stylus"]
 }

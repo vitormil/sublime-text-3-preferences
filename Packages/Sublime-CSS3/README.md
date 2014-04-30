@@ -1,18 +1,6 @@
 # Sublime Text CSS3 syntax highlight [![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
 
-<table>
-<tr>
-<td>
-Before:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3/master/before.png">
-</td>
-<td>
-After:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3/master/after.png">
-</td>
-</tr>
-</table>
-
+<img src="http://i.imgur.com/q3ETMkT.png">
 
 ## How to install
 
@@ -25,7 +13,7 @@ After:
 
 ## What has been added
 
-#### Property names (prefixes omitted)
+#### Property names
 ```
 all
 
@@ -113,6 +101,7 @@ transition-timing-function
 
 hyphens
 overflow-scrolling
+overflow-wrap
 tab-size
 text-align-last
 text-emphasis
@@ -123,6 +112,7 @@ word-break
 clip-path
 filter
 user-select
+line-clamp
 mask, mask-image, mask-size, mask-position
 font-smoothing, webkit-font-smoothing, -moz-osx-font-smoothing
 behavior
@@ -131,7 +121,8 @@ interpolation-mode
 ```
 
 
-#### Property values (prefixes omitted)
+#### Property values
+All animatable properties plus
 ```
 bicubic
 contain, cover, local

@@ -72,7 +72,7 @@
 	"tab_completion": true,
 	"tab_size": 2,
 	"theme": "Soda Light 3.sublime-theme",
+	"translate_tabs_to_spaces": false,
 	"trim_trailing_white_space_on_save": true,
-	"wide_caret": true,
 	"word_wrap": false
 }

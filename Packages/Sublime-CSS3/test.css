@@ -82,6 +82,8 @@ input::-ms-value {
 .transform-test {
     transform: rotate(30deg);
     transform-origin: 100% 100%;
+    transform-origin-y: 1;
+    transform-origin-x: 1;
 }
 .perspective-test {
     perspective: 500px;
@@ -185,44 +187,25 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: 4vmax;
     transform: rotate(0.25turn);
     transition: 0.2ms all;
-    width: calc(100px);
-    width: calc(100%/3);
+    width: calc(100px - 1px);
+    width: calc(100% + 3px);
     width: calc(100%/3 - 2*1em - 2*1px);
 }
-@media (min-resolution: 50dppx) {}
+@media (min-resolution: 50dppx){}
 
+@-webkit-keyframes name-animation, name-animation2{}
+@-moz-keyframes name-animation, name-animation2{}
+@-o-keyframes name-animation, name-animation2{}
+@keyframes name-animation, name-animation2{}
 
-@-webkit-keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-moz-keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-o-keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+/* next @-rules should be colored
+*/@media{}@font-face{}@keyframes t{}
+@media(min-resolution: 50dppx)
+{}
+@keyframes newlinetest
+{
+    from { text-align: center; }
+    to { text-align: center; }
 }
 
 :root {
@@ -298,6 +281,127 @@ col.selected || td,
     will-change: opacity;
 }
 
-.easing {
+.animation-and-easing {
     animation: ease, ease-in-out, ease-in, ease-out;
+    animation-fill-mode: forwards, both, backwards, none;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, alternate-reverse, reverse;
+    animation-play-state: paused, running;
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1),
+        step-start, step-end, steps(start, end);
+}
+
+.new-ellipsis {
+    -webkit-line-clamp: 3;
+    overflow-wrap: break-word;
+}
+
+.animatable-properties {
+    transition-property:
+        all,
+        background,
+        background-color,
+        background-image,
+        background-position,
+        background-size,
+        border,
+        border-color,
+        border-radius,
+        border-spacing,
+        border-bottom,
+        border-left,
+        border-right,
+        border-top,
+        border-bottom-left-radius,
+        border-radius,
+        border-width,
+        border-bottom-color,
+        border-left-color,
+        border-right-color,
+        border-top-color,
+        border-bottom-width,
+        border-left-width,
+        border-right-width,
+        border-top-width,
+        bottom,
+        box-shadow,
+        clip,
+        color,
+        crop,
+        font,
+        font-size-adjust,
+        font-size,
+        font-stretch,
+        font-weight,
+        height,
+        left,
+        letter-spacing,
+        line-height,
+        margin-bottom,
+        margin-left,
+        margin-right,
+        margin-top,
+        margin,
+        max-height,
+        max-lines,
+        max-width,
+        min-height,
+        min-width,
+        offset-after,
+        offset-before,
+        offset-end,
+        offset-start,
+        opacity,
+        outline-color,
+        outline-offset,
+        outline-width,
+        padding-bottom,
+        padding-left,
+        padding-right,
+        padding-top,
+        padding,
+        right,
+        text-decoration-color,
+        text-emphasis-color,
+        text-indent,
+        text-shadow,
+        text-size-adjust,
+        top,
+        vertical-align,
+        visibility,
+        width,
+        word-spacing,
+        z-index,
+        zoom,
+        columns,
+        column-count,
+        column-gap,
+        column-rule,
+        column-rule-color,
+        column-rule-width,
+        column-width,
+        flex,
+        flex-grow,
+        flex-shrink,
+        flex-basis,
+        order,
+        perspective,
+        perspective-origin,
+        transform,
+        transform-origin,
+        fill,
+        fill-opacity,
+        flood-color,
+        lighting-color,
+        marker-offset,
+        stop-color,
+        stop-opacity,
+        stroke,
+        stroke-dasharray,
+        stroke-dashoffset,
+        stroke-miterlimit,
+        stroke-opacity,
+        stroke-width,
+        viewport-fill,
+        viewport-fill-opacity;
 }
