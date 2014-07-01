@@ -1,4 +1,29 @@
 
+1.0.8 / 2014-06-27
+==================
+
+ * add css masking highlighting, fixes #6
+ * remove after/before images
+ * add pixel-ratio mq, sort props, cleaning
+ * use single prefix regex for props and values
+ * add compositing and blending level 1
+
+1.0.7 / 2014-05-23
+==================
+
+ * add currentColor keyword
+ * add new custom properties syntax support, deprecate previous syntax
+
+1.0.6 / 2014-05-20
+==================
+
+ * add new shapes keyword to readme, group and sort similar groups in readme
+ * add highlight for css shapes level 1
+ * fix border,column,flex highlight bugs
+ * fix media,keyframes @-rules newline opening bracket highlight
+ * highlight calc math operators as punctuation
+ * fix media,font-face,keyframes highlight: @-rules dont have to start on new line
+
 1.0.5 / 2014-04-23
 ==================
 

@@ -47,6 +47,7 @@ Plugins
 | ------------------------------- | -------- |
 | reveal_in_side_bar              | super+. |
 | paste_and_indent                | super+v |
+| find_all_under                  | ctrl+super+g |
 | alignment                       | ctrl+super+a |
 | sublimelinter_show_all_errors   | super+shift+l |
 | consolewrap                     | super+option+d |

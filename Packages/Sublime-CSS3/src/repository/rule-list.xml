@@ -30,14 +30,33 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>(-webkit-|-moz-|-ms-|-o-)</string>
-					<key>name</key>
-					<string>support.type.property-vendor.css</string>
+					<key>include</key>
+					<string>#vendor-prefix</string>
 				</dict>
 				<dict>
 					<key>begin</key>
 					<string>\b(var-)([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.custom-property.prefix.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>support.type.custom-property.name.css</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\b</string>
+					<key>name</key>
+					<string>invalid.deprecated.custom-property.css</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(--)([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -64,13 +83,13 @@
 						|align(-items|-content|-self)?|
 						|animation(-delay|-direction|-duration|-fill-mode|-iteration-count|-name|-play-state|-timing-function)?|
 						|backface-visibility|
-						|background(-clip|-origin|-size)|
+						|background(-blend-mode|-clip|-origin|-size)|
 						|behavior|
 						|border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|
 						|border-image(-outset|-repeat|-slice|-source|-width)?|
 						|box-sizing|
 						|box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
-						|clip-path|
+						|clip-(path|rule)|
 						|column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
 						|columns|
 						|inline-flex|
@@ -80,14 +99,17 @@
 						|font-effect|font-emphasize(-position|-style)?|
 						|font-smoothing|osx-font-smoothing|
 						|hyphens|
+						|isolation|
 						|justify-content|
 						|line-clamp|
-						|mask(-image|-size|-position)?|
+						|mask-(border-(mode|outset|repeat|slice|source|width)|border|clip|composite|image|mode|origin|position|repeat|size|type)|mask|
+						|mix-blend-mode|
 						|order|
 						|outline-offset|
 						|overflow-scrolling|
 						|overflow-wrap|
 						|perspective(-origin)?|
+						|shape-(image-threshold|margin|outside)|
 						|tab-size|
 						|text-align-last|
 						|text-emphasis(-color|-position|-style)?|
