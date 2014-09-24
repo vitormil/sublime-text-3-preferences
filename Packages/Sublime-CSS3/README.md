@@ -1,4 +1,5 @@
-# Sublime Text CSS3 syntax highlight [![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
+[![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3) [![Stories in Ready](https://badge.waffle.io/i-akhmadullin/Sublime-CSS3.png?label=ready&title=Ready)](https://waffle.io/i-akhmadullin/Sublime-CSS3)
+# Sublime Text CSS3 syntax highlight
 
 <img src="http://i.imgur.com/q3ETMkT.png">
 
@@ -44,8 +45,27 @@ flex-flow, flex-grow, flex-item-align, flex-line-pack
 flex-order, flex-pack, flex-shrink, flex-wrap
 font-effect
 font-emphasize, font-emphasize-position, font-emphasize-style
+font-feature-settings, font-kerning font-language-override
+font-stretch, font-synthesis
+font-variant-ligatures, font-variant-position, font-variant-caps
+font-variant-numeric, font-variant-alternates, font-variant-east-asian
 
 group
+grid-area
+grid-auto-columns
+grid-auto-flow
+grid-auto-rows
+grid-column
+grid-column-end
+grid-column-start
+grid-row
+grid-row-end
+grid-row-start
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+
 hyphens
 inline-flex
 isolation
@@ -88,11 +108,13 @@ text-emphasis
 text-overflow
 text-size-adjust
 
+unicode-range
 user-select
 word-break
 
 behavior
-webkit-font-smoothing, -moz-osx-font-smoothing
+-webkit-font-smoothing, -moz-osx-font-smoothing
+-webkit-text-fill-color
 interpolation-mode
 line-clamp
 -ms-writing-mode
@@ -112,26 +134,30 @@ table-cell, table-caption, table-column-group, table-column, table-row-group, ta
 linear-gradient, radial-gradient, webkit-gradient
 repeating-linear-gradient, repeating-radial-gradient
 
-box, flexbox, flex, column, column-reverse, row, row-reverse,
+box, flexbox, flex, column, column-reverse, row, row-reverse
 flex-start, flex-end, space-between, space-around, stretch
 wrap, wrap-reverse, start, inline-flex, inline-flexbox
 
 closest-side, closest-corner, farthest-side,
 ease, ease-in-out, ease-in, ease-out, from, to
 farthest-corner, color-stop, preserve-3d, ellipse
-transform, translate, rotate, scale, matrix, skew,
+transform, translate, rotate, scale, matrix, skew
 
 color-burn, color-dodge, color,
 darken, difference, exclusion, hard-light,
-hue, lighten, luminosity, multiply,
+hue, lighten, luminosity, multiply
 overlay, saturation, screen, soft-light
 
+grid, inline-grid, subgrid
+max-content, min-content
+dense, stack
+
 add, exclude, intersect, subtract
-evenodd, nonzero,
-fill-box, stroke-box, view-box,
-luminance,
-no-clip,
-round,
+evenodd, nonzero
+fill-box, stroke-box, view-box
+luminance
+no-clip
+round
 
 antialiased
 blink
@@ -144,6 +170,19 @@ textfield
 touch
 
 initial, unset
+
+ultra-condensed, extra-condensed, condensed, semi-condensed
+semi-expanded, expanded, extra-expanded, ultra-expanded
+common-ligatures, no-common-ligatures
+discretionary-ligatures, no-discretionary-ligatures
+historical-ligatures, no-historical-ligatures
+contextual, no-contextual
+all-small-caps, petite-caps, all-petite-caps, unicase, titling-caps
+lining-nums, oldstyle-nums, proportional-nums, tabular-nums
+diagonal-fractions, stacked-fractions, ordinal, slashed-zero
+historical-forms
+jis78, jis83, jis90, jis04, simplified, traditional
+full-width, proportional-width, ruby
 
 progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.Blur
@@ -173,6 +212,7 @@ progid:DXImageTransform.Microsoft.Shadow
 ::-webkit-search-cancel-button
 ::-webkit-search-decoration
 ::selection, ::-moz-selection
+dialog::backdrop
 ```
 
 #### Pseudo classes
@@ -208,11 +248,13 @@ progid:DXImageTransform.Microsoft.Shadow
 
 :placeholder-shown
 :user-error
+:-webkit-autofill
 ```
 
 #### At-rules
 ```
 @keyframes (without keyframe selectors atm)
+@custom-media (custom media queries)
 ```
 
 #### Tags
@@ -225,17 +267,24 @@ keygen, main, math, menuitem, picture, source, svg, template, track
 vw,vh,vmin,vmax,turn,ms,dppx
 ```
 
+#### Unicode-range
+```
+U+416, U+400-4ff, U+4??
+```
+
 #### Custom Properties for Cascading Variables
 ```
 --my-variable: 20px;
 ```
 
-#### Functional Notation
+#### Notations
 ```
 var(--my-variable)
 calc()
 circle()
 ellipse()
 inset()
+minmax()
 polygon()
+repeat()
 ```

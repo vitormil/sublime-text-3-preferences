@@ -10,7 +10,7 @@
   { "keys": ["ctrl+s"], "command": "insert_snippet", "args": {"name": "Packages/User/Snippets/css-session.sublime-snippet"} },
   { "keys": ["ctrl+shift+s"], "command": "insert_snippet", "args": {"name": "Packages/User/Snippets/css-sub-session.sublime-snippet"} },
 
-  { "keys": ["alt+d"], "command": "dash_doc", "args": { "flip_syntax_sensitive": true } },
+  { "keys": ["shift+alt+d"], "command": "dash_doc", "args": { "flip_syntax_sensitive": true } },
 
   { "keys": ["ctrl+c", "ctrl+f"], "command": "copy_file_name" },
   { "keys": ["ctrl+i", "ctrl+f"], "command": "insert_file_name" },
@@ -21,7 +21,13 @@
   { "keys": ["ctrl+c", "ctrl+d"], "command": "copy_file_directory" },
   { "keys": ["ctrl+i", "ctrl+d"], "command": "insert_file_directory" },
 
+  { "keys": ["super+f12"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
   { "keys": ["super+f2"], "command": "sublime_bookmark", "args" : { "type" : "toggle_line"  } },
   { "keys": ["f2"], "command": "sublime_bookmark", "args" : { "type" : "goto_next" } },
-  { "keys": ["super+shift+f2"], "command": "sublime_bookmark", "args" : { "type" : "remove_all"  } }
+  { "keys": ["super+shift+f2"], "command": "sublime_bookmark", "args" : { "type" : "remove_all"  } },
+
+  { "keys": ["alt+t"], "command": "rails_go_to_spec" },
+  { "keys": ["alt+d"], "command": "goto_definition" },
+  { "keys": ["alt+m"], "command": "toggle_minimap" }
 ]

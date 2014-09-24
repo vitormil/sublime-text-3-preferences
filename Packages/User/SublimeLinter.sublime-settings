@@ -35,7 +35,8 @@
             "json": {
                 "@disable": false,
                 "args": [],
-                "excludes": []
+                "excludes": [],
+                "strict": true
             },
             "ruby": {
                 "@disable": false,

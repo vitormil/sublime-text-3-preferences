@@ -1,0 +1,20 @@
+{
+  "erb_verify_command": "erb -xT - {file_name} | ruby -c",
+  "ruby_verify_command": "ruby -c {file_name}",
+
+  "ruby_rspec_folder": "spec",
+  "run_rspec_command": "rspec {relative_path} -f d",
+  "run_single_rspec_command": "rspec {relative_path}:{line_number} -f d",
+
+  "ruby_use_scratch" : false,
+  "save_on_run": false,
+  "ignored_directories": [".git", "vendor", "tmp"],
+
+  "hide_panel": false,
+
+  "before_callback": "",
+  "after_callback": "",
+
+  "theme": "Packages/RubyTest/TestConsole.hidden-tmTheme",
+  "syntax": "Packages/RubyTest/TestConsole.tmLanguage"
+}

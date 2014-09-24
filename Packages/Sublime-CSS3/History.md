@@ -1,4 +1,44 @@
 
+1.0.14 / 2014-09-08
+==================
+
+ * add css inline layout level 3 fixes #34
+
+1.0.13 / 2014-09-02
+==================
+
+ * remove unneeded keyframes wrapper
+ * get rid of patterns dir
+ * move to multiline regexes, highlight prefixes in pseudo-elements, fixes #32
+ * add highlight for -o-min-device-pixel-ratio, fix font shorthand regex
+ * Update README.md
+ * Merge pull request #33 from waffle-iron/master
+ * add waffle.io badge
+
+1.0.12 / 2014-08-14
+==================
+
+ * add css3-fonts and unicode-range highlight
+ * add webkit input pseudoclass and fill color
+ * fix package.json
+
+1.0.11 / 2014-07-30
+==================
+
+ * add highlight for dialog backdrop pseudo-element
+ * fix nested parentheses inside calc
+ * fix custom-media regex
+
+1.0.10 / 2014-07-16
+==================
+
+ * add custom media queries highlight, add tests for media queries level 4 draft
+
+1.0.9 / 2014-07-10
+==================
+
+ * add highlight for css grid layout
+
 1.0.8 / 2014-06-27
 ==================
 
