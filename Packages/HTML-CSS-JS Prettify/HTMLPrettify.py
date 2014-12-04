@@ -47,13 +47,6 @@ class HtmlprettifyCommand(sublime_plugin.TextCommand):
     if len(output) < 1:
       return
 
-    # Ensure a newline is at the end of the file if preferred.
-    ensure_newline_at_eof = self.view.settings().get("ensure_newline_at_eof_on_save")
-    if ensure_newline_at_eof \
-      and not is_formatting_selection_only \
-      and not output.endswith("\n"):
-      output += "\n"
-
     # Replace the text only if it's different.
     if output != buffer_text:
       if is_formatting_selection_only:
@@ -177,16 +170,10 @@ class PluginUtils:
 
   @staticmethod
   def get_node_path():
-    # Simply using `node` without specifying a path sometimes doesn't work :(
-    if PluginUtils.exists_in_path("nodejs"):
-      return "nodejs"
-    elif PluginUtils.exists_in_path("node"):
-      return "node"
-    else:
-      platform = sublime.platform()
-      node = PluginUtils.get_pref("node_path").get(platform)
-      print("Using node.js path on '" + platform + "': " + node)
-      return node
+    platform = sublime.platform()
+    node = PluginUtils.get_pref("node_path").get(platform)
+    print("Using node.js path on '" + platform + "': " + node)
+    return node
 
   @staticmethod
   def get_output(cmd):

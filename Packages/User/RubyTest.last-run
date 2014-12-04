@@ -1,4 +1,4 @@
 {
-	"last_test_run": "rspec spec/features/logout_spec.rb:8 -f d",
-	"last_test_working_dir": "/Users/voliveira/Sites/festy/festy-web"
+	"last_test_run": "rspec spec/features/login_spec.rb:7 -f d",
+	"last_test_working_dir": "/Users/voliveira/Sites/medicard/medicard-web"
 }

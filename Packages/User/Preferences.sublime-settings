@@ -53,10 +53,10 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Jump Along Indent",
+		"Syntax Highlighting for Sass",
 		"HTML-CSS-JS Prettify",
 		"Vintage",
-		"Syntax Highlighting for Sass"
+		"Jump Along Indent"
 	],
 	"indent_guide_options":
 	[
