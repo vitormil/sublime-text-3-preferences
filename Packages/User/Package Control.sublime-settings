@@ -1,4 +1,7 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"3024 Color Scheme",
@@ -36,6 +39,7 @@
 		"LESS",
 		"Markdown Preview",
 		"Origami",
+		"Package Control",
 		"Path Tools",
 		"RailsGoToSpec",
 		"Revert All Files",
@@ -43,7 +47,6 @@
 		"RubyTest",
 		"Sass",
 		"SideBarEnhancements",
-		"Sublime Bookmarks",
 		"Sublime-CSS3",
 		"SublimeLinter",
 		"SublimeLinter-annotations",

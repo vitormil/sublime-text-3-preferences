@@ -27,6 +27,14 @@
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		".tags",
+		".ctags",
+		".tags_sorted_by_file",
+		".gemtags"
+	],
 	"folder_exclude_patterns":
 	[
 		"target",
@@ -53,10 +61,10 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Syntax Highlighting for Sass",
+		"Jump Along Indent",
 		"HTML-CSS-JS Prettify",
 		"Vintage",
-		"Jump Along Indent"
+		"Syntax Highlighting for Sass"
 	],
 	"indent_guide_options":
 	[
