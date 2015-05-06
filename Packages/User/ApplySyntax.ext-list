@@ -1,0 +1,8 @@
+{
+	"JSON":
+	[
+		".csslintrc",
+		".jscsrc",
+		".jshintrc"
+	]
+}

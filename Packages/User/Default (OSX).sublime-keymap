@@ -31,5 +31,7 @@
   { "keys": ["alt+a"], "command": "jump_prev" },
 
   { "keys": ["alt+t"], "command": "rails_go_to_spec" },
-  { "keys": ["alt+m"], "command": "toggle_minimap" }
+  { "keys": ["alt+m"], "command": "toggle_minimap" },
+
+  { "keys": ["super+e"], "command": "recent_active_files" }
 ]
