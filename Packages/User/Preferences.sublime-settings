@@ -1,4 +1,8 @@
 {
+	"added_words":
+	[
+		"Elis"
+	],
 	"auto_close_tags": true,
 	"auto_complete": true,
 	"auto_complete_delay": 10,
@@ -48,23 +52,25 @@
 		".sass-cache",
 		"pkg",
 		".bundle",
-		"node_modules"
+		"node_modules",
+		"coverage",
+		"public/data"
 	],
 	"font_face": "Menlo",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 16.0,
+	"font_size": 16,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Jump Along Indent",
 		"HTML-CSS-JS Prettify",
-		"Vintage",
-		"Syntax Highlighting for Sass"
+		"Jump Along Indent",
+		"Syntax Highlighting for Sass",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
